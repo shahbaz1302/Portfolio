@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohd Shahbaz Khan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "tYG-5p4_cssjl7kik",
+        });
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ========== Start Navbar Section ========== -->
+  
+  
+  <header id="header">
+    <div class="container">
+      <nav>
+        <h1><span style="color: #ff004f;">S</span>hahbaz</h1>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- ========== End Navbar Section ========== -->
+ 
+  <!-- ========== Start Hero Section ========== -->
+  
+  
+  <main id="home">
+    <div class="section-hero">
+      <div class=" container grid grid-two--cols">
+        <div class="section-hero--content">
+          <h3 class="hero-subheading">Hi, I'm</h3>
+          <h1 class="hero-heading">
+            <span>Shahbaz Khan</span>
+          </h1>
+          <h3 class="hero-subheading-2">And I'm a <span class="text"></span></h3>
+          <p class="hero-para">
+            I am a passionate Web Developer crafting seamless, responsive websites with clean code and creative design.
+          </p>
+          <div class="hero-btn">
+            <a href="#about" class="btn">More About Me</a>
+          </div>
+        </div>
+        <div class="section-hero--image" data-aos="fade-up">
+          <figure>
+            <img src="./public/images/main.webp" alt="A 3d character doing coding stuff">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- ========== End Hero Section ========== -->
+
+  <!-- ========== Start About Section ========== -->
+
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+           <img src="./public/images/about.webp">
+        </div>
+        <div class="about-col-2">
+          <h2 class="heading">About Me</h2>
+          <p>I am a dedicated web developer passionate about creating interactive and responsive websites using the latest technologies in HTML, CSS, and JavaScript.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link " onclick="openTab('personalInformation',event)">Details</p>
+            <p class="tab-links" onclick="openTab('education',event)">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="personalInformation">
+            <ul>
+              <li><span>Name <br> </span>Mohd Shahbaz Khan</li>
+              <li><span>Date of Birth <br> </span>2<sup>nd</sup> January 2004</li>
+              <li><span>Address <br> </span>Lucknow , 226028</li>
+              <li><span>Phone Number <br> </span>9058768423</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-2026 <br> </span>Pursuing B.Tech form Babu Banarasi Das University , Lucknow</li>
+              <li><span>2021 <br> </span>Intermediate from Ben-Hur Public School , Pilibhit</li>
+              <li><span>2019 <br> </span>High School from Ben-Hur Public School , Pilibhit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ========== End About Section ========== -->
+
+  <!-- ========== Start Services Section ========== -->
+
+  <div id="services">
+    <div class="container">
+      <h2 class="heading">My Services</h2>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Web Design</h3>
+          <p>Crafting visually engaging and user-friendly websites tailored to your brand.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h3>Java</h3>
+          <p>Building robust and scalable Java applications with clean, efficient code.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-github"></i>
+          <h3>Version Control</h3>
+          <p>Streamlining development with Git and GitHub for effective version control and collaboration.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ========== End Services Section ========== -->
+
+  <!-- ========== Start Skill Section ========== -->
+  
+  <div id="skills">
+    <div class="container">
+      <h2 class="heading">My Skills</h2>
+      <div class="container1">
+
+        <div class="container2">
+          <div class="heading-div1">
+            <h3 class="heading2">Technical Skills</h3>
+          </div>
+          <div class="technical-bars">
+            <div class="bar">
+              <i class="fa-brands fa-html5"></i>
+              <div class="info">
+                <span style="color: #fff;">HTML</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-css3-alt"></i>
+              <div class="info">
+                <span style="color: #fff;">CSS</span>
+              </div>
+              <div class="progress-line css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-js"></i>
+              <div class="info">
+                <span style="color: #fff;">JavaScript</span>
+              </div>
+              <div class="progress-line javascript">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-java"></i>
+              <div class="info">
+                <span style="color: #fff;">Java</span>
+              </div>
+              <div class="progress-line java">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-react"></i>
+              <div class="info">
+                <span style="color: #fff;">React</span>
+              </div>
+              <div class="progress-line react">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="heading-div2">
+            <h3 class="heading2">Professional Skills</h3>
+          </div>
+          <div class="radial-bars">
+
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path1" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">80%</div>
+              <div class="text1">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path2" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">85%</div>
+              <div class="text1">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">77%</div>
+              <div class="text1">Problem Solving</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path4" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="text1">Teamwork</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <!-- ========== End Skill Section ========== -->
+  
+
+
+
+  <!-- ========== Start Projects Section ========== -->
+
+  <div id="projects">
+    <div class="container">
+      <h2 class="heading">My Projects</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="./public/images/work-1.webp">
+          <div class="layer">
+            <h3>Khan's Eduhub</h3>
+            <p>Empowering students with accessible, user-friendly online education tools.</p>
+            <a href="https://khaneduhub.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./public/images/work-3.webp">
+          <div class="layer">
+            <h3>Khan Store</h3>
+            <p>Designed to streamline online shopping with responsive design and efficient navigation.</p>
+            <a href="https://khanstore.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./public/images/work-2.webp">
+          <div class="layer">
+            <h3>World Atlas</h3>
+            <p>Explore, search, sort, and filter countries with real-time data and detailed insights.</p>
+            <a href="https://worlddatlass.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+  </div>
+  
+  <!-- ========== End Projects Section ========== -->
+  
+  <!-- ========== Start Contact Section ========== -->
+  
+  
+  
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 class="heading">Contact Me</h2>
+          <p><i class="fa-regular fa-paper-plane"></i> khanmohdshahbaz70@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 9058768423</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="./public/images/Shahbaz Web Developer.pdf" download class="btn btn-2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form id="contact-form">
+            <input type="text" name="name" id="name" required placeholder="Enter your name" autocomplete="off">
+            <input type="email" name="email" id="email" required placeholder="Enter your e-mail" autocomplete="off">
+            <input type="text" name="subject" id="subject" required placeholder="Subject" autocomplete="off">
+            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ========== End Contact Section ========== -->
+
+  <!-- ========== Start Footer Section ========== -->
+  
+  
+  
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; Mohd Shahbaz Khan</p>
+    </div>
+  </footer>
+  
+  <!-- ========== End Footer Section ========== -->
+  <script>
+    var typing=new Typed(".text", {
+    strings: ["Web Developer", "Creative Coder", "Tech Enthusiast"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+  });
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
